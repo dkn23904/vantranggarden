@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Vân Trang Garden Hotel</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #f8f9f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c0f0cc;
+        }
+
+        /* BANNER */
+        .banner {
+            position: relative;
+            height: 90vh;
+            background: url('images/banner.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px 40px;
+            border-radius: 8px;
+            animation: fadeIn 2s ease;
+        }
+
+        /* ABOUT */
+        .about {
+            background: white;
+            padding: 80px 100px;
+            animation: fadeUp 1.5s ease;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: #0b3d2e;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .about-img {
+            flex: 1;
+            text-align: right;
+            min-width: 300px;
+        }
+
+        .about-img img {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .about-img img:hover {
+            transform: scale(1.03);
+        }
+
+        /* ROOMS */
+        .rooms {
+            background: #f4f8f6;
+            padding: 80px 100px;
+            text-align: center;
+        }
+
+        .rooms h2 {
+            color: #0b3d2e;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .room-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .room {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            width: 320px;
+            animation: fadeUp 1.5s ease;
+        }
+
+        .room img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .room h3 {
+            color: #0b3d2e;
+            font-size: 22px;
+            margin: 15px 0 5px;
+        }
+
+        .room p {
+            padding: 0 15px 20px;
+            color: #666;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: white;
+            padding: 70px 100px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #0b3d2e;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        footer {
+            background: #0b3d2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>VÂN TRANG GARDEN</h1>
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#rooms">Phòng</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner" id="home">
+        <h2>Chào mừng đến với Vân Trang Garden Hotel</h2>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Giới thiệu</h2>
+                <p>Vân Trang Garden là khách sạn cao cấp giữa lòng thiên nhiên, mang đến trải nghiệm nghỉ dưỡng hoàn hảo cho du khách. 
+                Với thiết kế hiện đại, không gian xanh và dịch vụ chuẩn 5 sao, chúng tôi cam kết mang lại kỳ nghỉ đáng nhớ cho bạn.</p>
+                <p>Khách sạn có nhiều loại phòng sang trọng, hồ bơi ngoài trời, khu vườn rộng và nhà hàng phục vụ các món ăn đặc sản địa phương. 
+                Hãy đến và tận hưởng kỳ nghỉ tuyệt vời trong không gian yên bình của Vân Trang Garden.</p>
+            </div>
+            <div class="about-img">
+                <img src="images/about.jpg" alt="Vân Trang Garden Hotel">
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section class="rooms" id="rooms">
+        <h2>Các loại phòng</h2>
+        <div class="room-container">
+            <div class="room">
+                <img src="images/room1.jpg" alt="Phòng Deluxe">
+                <h3>Phòng Deluxe</h3>
+                <p>Không gian rộng rãi, hướng vườn, nội thất gỗ sang trọng.</p>
+            </div>
+            <div class="room">
+                <img src="images/room2.jpg" alt="Phòng VIP">
+                <h3>Phòng VIP</h3>
+                <p>Tầm nhìn toàn cảnh, dịch vụ phòng 24/7, bồn tắm cao cấp.</p>
+            </div>
+            <div class="room">
+                <img src="images/room3.jpg" alt="Phòng Suite">
+                <h3>Phòng Suite</h3>
+                <p>Không gian riêng tư, có phòng khách và ban công riêng.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Liên hệ</h2>
+        <p>📍 Địa chỉ: 27C/7 tổ 7, ấp Tân An, xã Tân Hạnh, huyện Long Hồ, Vĩnh Long, Vĩnh Long, Việt Nam</p>
+        <p>📞 Hotline: 070 766 4664</p>
+        <p>📧 Email: vantranggardenhotel@gmail.com</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Vân Trang Garden Hotel
+    </footer>
+
+</body>
+</html>
